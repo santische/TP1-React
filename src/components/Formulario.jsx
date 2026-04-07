@@ -1,17 +1,28 @@
-import "../styles/Formulario.css";
-
 function Formulario() {
   return (
-    <div className="formulario">
-      <h2>CREAR MI CITA</h2>
+    <div className="one-half column">
+      <h2>Crear mi Cita</h2>
 
-      <input placeholder="Nombre Mascota" />
-      <input placeholder="Nombre dueño de la mascota" />
-      <input type="date" />
-      <input type="time" />
-      <textarea placeholder="Síntomas"></textarea>
+      <form>
+        <label>Nombre Mascota</label>
+        <input type="text" name="mascota" className="u-full-width" />
 
-      <button>AGREGAR CITA</button>
+        <label>Nombre Dueño</label>
+        <input type="text" name="propietario" className="u-full-width" />
+
+        <label>Fecha</label>
+        <input type="date" name="fecha" className="u-full-width" />
+
+        <label>Hora</label>
+        <input type="time" name="hora" className="u-full-width" />
+
+        <label>Sintomas</label>
+        <textarea name="sintomas" className="u-full-width"></textarea>
+
+        <button type="submit" className="u-full-width button-primary">
+          Agregar Cita
+        </button>
+      </form>
     </div>
   );
 }
