@@ -10,7 +10,7 @@ function App() {
       mascota: "Momia",
       dueño: "Alejo",
       fecha: "2023-12-12",
-      hora: "09:12",
+      hora: "09:14",
       sintomas: "Le duele Qatar",
     },
 
